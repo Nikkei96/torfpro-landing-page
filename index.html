@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Торфпродукт</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <span class="header__menu">Меню</span>
+                <div class="header__logo">
+                    <a class="header__logo-link" href="#">
+                        <img class="header__img" src="/img/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__nav">
+                    <div class="header__nav-logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__img" src="/img/logo.png" alt="">
+                        </a>
+                    </div>
+                    <a class="header__link" href="#">О компании</a>
+                    <a class="header__link" href="#">Новости</a>
+                    <a class="header__link" href="#">Каталог</a>
+                    <a class="header__link" href="#">Оплата и доставка</a>
+                    <div class="header__lang-wrap">
+                        <a class="header__lang header__lang--active" href="#">Ru</a>
+                        <a class="header__lang" href="#">En</a>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Promo -->
+    <section class="promo">
+        <div class="container">
+            <div class="promo__inner">
+                <div class="promo__info">
+                    <h1 class="promo__title">Увеличение объема Вашего урожая</h1>
+                    <p class="promo__subtitle">Повышаем урожайность и качество сельскохозяйственных культур без вреда
+                        для экологии.</p>
+                </div>
+                <button class="promo__btn button">Посмотреть каталог</и>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__img">
+                    <img class="about__img-canister" src="/img/canister.webp" alt="">
+                </div>
+                <div class="about__info">
+                    <div class="about__main-info">
+                        <h2 class="about__title title">Что такое <span class="piece--color--green">Торфопродукт?</span>
+                        </h2>
+                        <p class="about__description"> Это высокоэффективные биологически активные препараты, состоящие
+                            из органических веществ естественного происхождения. В качестве сырья используется низинный
+                            торф, добываемый на Васюганских болотах, самых больших болотах в мире.</p>
+                    </div>
+                    <div class="about__detail-info">
+                        <div class="about__detail-paragraphes">
+                            <p class="about__detail-description detail-description">Торфопродукт - <span
+                                    class="piece--color--green">это экологически чистая вытяжка</span>
+                                из торфа, содержащая гуминовые кислоты, аминокислоты и минеральные компоненты,идеально
+                                подходящая для замачивания и корневого полива растений с целью повышения урожайности и
+                                качества растительных культур.</p>
+                            <p class="about__detail-description detail-description">Торфопродукт ускоряет поступление
+                                микроэлементов в растения через корневую систему и поверхность листьев. В составе
+                                содержит гуминовые кислоты, аминокислоты, карбоновые кислоты, макро- и микроэлементы.
+                            </p>
+                        </div>
+                        <div class="about__advantage">
+                            <ul class="about__list">
+                                <li class="about__list-item list list--check">хелаты</li>
+                                <li class="about__list-item list list--check">биодоступная форма</li>
+                                <li class="about__list-item list list--check">природное соотношение компонентов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing -->
+    <section class="testing">
+        <div class="container">
+            <div class="testing__inner">
+                <h2 class="testing__title title">Испытания удобрения</h2>
+
+                <div class="tabs">
+                    <nav class="tabs__items">
+                        <button class="tabs__item" id="defaultOpen" onclick="openCity(event, 'Novosibirsk')">В
+                            Новосибирской области</button>
+                        <button class="tabs__item" onclick="openCity(event, 'Uzbekistan')">В Узбекистане</button>
+                        <button class="tabs__item" onclick="openCity(event, 'Altay')">В Алтайском крае</button>
+                    </nav>
+                    <!-- Dropdown -->
+                    <div class="tabs__dropdown">
+                        <button onclick="openDropTest()" id="tabs__text"
+                            class="tabs__dropbtn tabs__drop-item">Регион</button>
+                        <div id="drop-test" class="tabs__dropdown-content">
+                            <button class="tabs__drop-item" id="defaultOpen" onclick="openCity(event, 'Novosibirsk')">В
+                                Новосибирской области</button>
+                            <button class="tabs__drop-item" onclick="openCity(event, 'Uzbekistan')">В
+                                Узбекистане</button>
+                            <button class="tabs__drop-item" onclick="openCity(event, 'Altay')">В Алтайском крае</button>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="tabs__body">
+                        <div class="tabs__block" id="Novosibirsk">
+                            <div class="tabs__info">
+                                <h3 class="tabs__result">Увеличение урожайности</h3>
+                                <h2 class="tabs__crop">Яровой пшеницы</h2>
+                                <p class="tabs__research">*<a href="" class="tabs__research-link">по результатам
+                                        исследования</a> ЗАО «Агродоктора» </p>
+                            </div>
+                            <div class="tabs__img-block">
+                                <img class="tabs__img" src="/img/testing-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs__block" id="Uzbekistan">
+                            <div class="tabs__info">
+                                <h3 class="tabs__result">Увеличение урожайности</h3>
+                                <h2 class="tabs__crop">Хлопчатника</h2>
+                                <p class="tabs__research">*<a href="" class="tabs__research-link">по результатам
+                                        исследования</a> в условиях Андижанской области (Узбекистан) </p>
+                            </div>
+                            <div class="tabs__img-block">
+                                <img class="tabs__img" src="/img/testing-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tabs__block" id="Altay">
+                            <div class="tabs__info">
+                                <h3 class="tabs__result">Увеличение урожайности</h3>
+                                <h2 class="tabs__crop"> Яровой пшеницы </h2>
+                                <p class="tabs__research">*<a href="" class="tabs__research-link">по результатам
+                                        исследования</a> в условиях Алтайского края </p>
+                            </div>
+                            <div class="tabs__img-block">
+                                <img class="tabs__img" src="/img/testing-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harvest -->
+    <section class="harvest">
+        <div class="container">
+            <div class="harvest__inner">
+                <h2 class="harvest__title title">Стабильный <span class="piece--color--green">урожай</span></h2>
+                <div class="harvest__info">
+                    <div class="harvest__info-col">
+                        <div class="harvest__info-item">
+                            <h3 class="harvest__info-title">Погодный фактор</h3>
+                            <p class="harvest__desc">Получение стабильных урожаев даже при неблагоприятных погодных
+                                условиях: жара, заморозки, засуха, переувлажнение и недостаточное количество солнечных
+                                дней.</p>
+                        </div>
+                        <div class="harvest__info-item">
+                            <h3 class="harvest__info-title">Хорошая совместимость</h3>
+                            <p class="harvest__desc">Агрономам нужно решать сразу несколько целей: повышение всхожести,
+                                снятие стресса после применения пестицидов, повышение устойчивости к холоду или засухе.
+                                "Торфопродукт" совместим в баковых смесях с минеральными подкормками и средствами защиты
+                                растений. </p>
+                        </div>
+                        <div class="harvest__info-item">
+                            <h3 class="harvest__info-title">Экономия</h3>
+                            <p class="harvest__desc">— на пестицидах: от 15% при предпосевной обработке семян и 5-10%
+                                при проведении обработок по вегетации. <br>
+                                — на минеральных удобрениях: 25-40% за счет увеличения коэффициента усвояемости их
+                                растениями. </p>
+                        </div>
+                    </div>
+
+                    <div class="harvest__info-img">
+                        <img src="../img/harvest__bg.jpg" alt="" class="harvest__info-back">
+                    </div>
+
+                    <div class="harvest__info-col harvest__info-col--right">
+                        <div class="harvest__info-item">
+                            <h3 class="harvest__info-title">Негормональные препараты</h3>
+                            <p class="harvest__desc">В составы наших удобрений входят только растительные вещества, не
+                                оказывающие губительное влияние на почву.</p>
+                        </div>
+                        <div class="harvest__info-item">
+                            <h3 class="harvest__info-title">Контроль качества</h3>
+                            <p class="harvest__desc">Все препараты проходят контроль в экологической организации
+                                «Станция агрохимической службы «Томская».</p>
+                        </div>
+                        <div class="harvest__info-item">
+                            <h3 class="harvest__info-title">Индивидуальный анализ почвы</h3>
+                            <p class="harvest__desc">В нашей лаборатории можно заказать индивидуальное исследование
+                                почвы. Специалисты подскажут, каких элементов не хватает и подберут нужное удобрение для
+                                восполнения необходимых компонентов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consult -->
+    <section class="consult">
+        <div class="container">
+            <div class="consult__inner">
+                <div class="consult__title title">Получить консультацию</div>
+                <form method="GET" action="#" class="consult__form">
+                    <div class="consult__item">
+                        <p class="consult__text">Ваш E-mail</p>
+                        <input class="consult__input" type="email" name="" id="" placeholder="mail@example.com">
+                    </div>
+                    <div class="consult__item">
+                        <p class="consult__text">Ваше имя</p>
+                        <input class="consult__input" type="text" name="" id="" placeholder="Сергей Иванов">
+                    </div>
+                    <div class="consult__item">
+                        <p class="consult__text">Ваш телефон</p>
+                        <input class="consult__input" type="tel" name="" id="" placeholder="+7(999)999-99-99">
+                    </div>
+
+                    <button class="consult__btn button">Отправить</и>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtues  -->
+    <section class="virtues">
+        <div class="container">
+            <div class="virtues__inner">
+                <h2 class="virtues__title title">Работает <span class="piece--color--green">как прилипатель</span></h2>
+                <div class="virtues__content">
+                    <div class="virtues__col">
+                        <h3 class="virtues__title-col">Без применения удобрения</h3>
+                        <ul class="virtues__list">
+                            <li class="virtues__list-item virtues__list-item--min">Низкий процент усвояемости
+                                питательных веществ и микроэлементов</li>
+                            <li class="virtues__list-item virtues__list-item--min">Растение, которое обрабатывается
+                                обычным
+                                удобрением не в состоянии удержать микроэлементы на листовой пластине</li>
+                        </ul>
+                    </div>
+
+                    <div class="virtues__col">
+                        <h3 class="virtues__title-col virtues__title-col--pros">С применением Торфопродукта</h3>
+                        <ul class="virtues__list">
+                            <li class="virtues__list-item virtues__list-item--pros">Увеличение биодоступности вносимых
+                                микроэлементов за счёт их связывания в аминокислотные комплексы</li>
+                            <li class="virtues__list-item virtues__list-item--pros">Микроэлементы связываются с жирными
+                                гуминовыми кислотами, прилипают к листу
+                                и удерживаются в почве в зоне корней</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tree  -->
+    <section class="tree">
+        <div class="container">
+            <div class="tree__inner">
+                <div class="tree__vitamines">
+                    <img src="../img/tree__vitamin-A.png" alt="" class="tree__vitamin tree__vitamin-a">
+                    <img src="../img/tree__vitamin-B.png" alt="" class="tree__vitamin tree__vitamin-b">
+                    <img src="../img/tree__vitamin-C.png" alt="" class="tree__vitamin tree__vitamin-c">
+                    <img src="../img/tree__vitamin-M0.png" alt="" class="tree__vitamin tree__vitamin-m0">
+                    <img src="../img/tree__vitamin-N.png" alt="" class="tree__vitamin tree__vitamin-n">
+                    <img src="../img/tree__vitamin-B6.png" alt="" class="tree__vitamin tree__vitamin-b6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section class="news">
+        <div class="container">
+            <div class="news__inner">
+                <h2 class="news__title title">Наши новости</h2>
+                <div class="news__block">
+                    <nav class="news__nav">
+                        <button class="news__nav-item" onclick="openNews(event, 'all')"
+                            id="defaultOpenNews">Все</button>
+                        <button class="news__nav-item" onclick="openNews(event, 'co')">Новости компании</button>
+                        <button class="news__nav-item" onclick="openNews(event, 'articles')">Статьи</button>
+                        <button class="news__nav-item" onclick="openNews(event, 'media')">Медиатека</button>
+                    </nav>
+                    <!-- Dropdown -->
+                    <div class="news__dropdown">
+                        <div class="news__drop-wrap">
+                            <button onclick="openDropNews()" id="news__text"
+                                class="news__dropbtn">dropdown</button>
+                        </div>
+                        <div id="news__drop" class="news__drop-content">
+                            <button class="news__drop-item" onclick="openNews(event, 'all')"
+                                id="defaultOpenNews">Все</button>
+                            <button class="news__drop-item" onclick="openNews(event, 'co')">Новости компании</button>
+                            <button class="news__drop-item" onclick="openNews(event, 'articles')">Статьи</button>
+                            <button class="news__drop-item" onclick="openNews(event, 'media')">Медиатека</button>
+                        </div>
+                    </div>
+                    <div class="news__cards" id="all">
+                        <div class="news__cards-item">
+                            <div class="news__cards-img">
+                                <img src="../img/news__1.jpg" alt="" class="news__cards-img-content">
+                                <div class="news__category">Новости компании</div>
+                            </div>
+                            <div class="news__cards-description">
+                                <div class="news__cards-description-inner">
+                                    <h3 class="news__cards-title">Ранний аграрный сезон ускоряет темп</h3>
+                                    <p class="news__cards-subtitle">В связи с аномально теплой погодой в Сибири аграрный
+                                        сезон начался раньше срока.</p>
+                                    <span class="news__date">25.05.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__cards-item">
+                            <div class="news__cards-img">
+                                <img src="../img/news__2.jpg" alt="" class="news__cards-img-content">
+                                <div class="news__category">Статьи</div>
+                            </div>
+                            <div class="news__cards-description">
+                                <div class="news__cards-description-inner">
+                                    <h3 class="news__cards-title">Чего не стоит делать при внесении удобрений?</h3>
+                                    <p class="news__cards-subtitle">Мы собрали для вас самые распространенные ошибки,
+                                        которые можно допустить при использовании удобрений.</p>
+                                    <span class="news__date">20.04.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__cards-item">
+                            <div class="news__cards-img">
+                                <img src="../img/news__3.jpg" alt="" class="news__cards-img-content">
+                                <div class="news__category">Медиатека</div>
+                            </div>
+                            <div class="news__cards-description">
+                                <div class="news__cards-description-inner">
+                                    <h3 class="news__cards-title">Карантин с пользой: семь образовательных ресурсов</h3>
+                                    <p class="news__cards-subtitle">Предлагаем познакомиться с интересными лекциями и
+                                        курсами, позволяющими расширить свои знания в области биологии, экологии и
+                                        сельского хозяйства.</p>
+                                    <span class="news__date">17.04.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__cards" id="co">
+                        <div class="news__cards-item">
+                            <div class="news__cards-img">
+                                <img src="../img/news__1.jpg" alt="" class="news__cards-img-content">
+                                <div class="news__category">Новости компании</div>
+                            </div>
+                            <div class="news__cards-description">
+                                <div class="news__cards-description-inner">
+                                    <h3 class="news__cards-title">Ранний аграрный сезон ускоряет темп</h3>
+                                    <p class="news__cards-subtitle">В связи с аномально теплой погодой в Сибири аграрный
+                                        сезон начался раньше срока.</p>
+                                    <span class="news__date">25.05.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__cards" id="articles">
+                        <div class="news__cards-item">
+                            <div class="news__cards-img">
+                                <img src="../img/news__2.jpg" alt="" class="news__cards-img-content">
+                                <div class="news__category">Статьи</div>
+                            </div>
+                            <div class="news__cards-description">
+                                <div class="news__cards-description-inner">
+                                    <h3 class="news__cards-title">Чего не стоит делать при внесении удобрений?</h3>
+                                    <p class="news__cards-subtitle">Мы собрали для вас самые распространенные ошибки,
+                                        которые можно допустить при использовании удобрений.</p>
+                                    <span class="news__date">20.04.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news__cards" id="media">
+                        <div class="news__cards-item">
+                            <div class="news__cards-img">
+                                <img src="../img/news__3.jpg" alt="" class="news__cards-img-content">
+                                <div class="news__category">Медиатека</div>
+                            </div>
+                            <div class="news__cards-description">
+                                <div class="news__cards-description-inner">
+                                    <h3 class="news__cards-title">Карантин с пользой: семь образовательных ресурсов</h3>
+                                    <p class="news__cards-subtitle">Предлагаем познакомиться с интересными лекциями и
+                                        курсами, позволяющими расширить свои знания в области биологии, экологии и
+                                        сельского хозяйства.</p>
+                                    <span class="news__date">17.04.2020</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="news__button button">Все новости</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__info">
+                    <h2 class="contacts__title title">Наши контакты</h2>
+                    <div class="contacts__wrap">
+                        <ul class="contacts__list">
+                            <li class="contacts__list-item">info@torfpro.ru</li>
+                            <li class="contacts__list-item">г. Томск, ул. Мокрушина, 13А</li>
+                            <li class="contacts__list-item">8-800-600-51-49</li>
+                        </ul>
+                        <div class="contacts__map">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__form-wrap">
+                    <div class="contacts__form-info">
+                        <h3 class="contacts__form-title">Остались вопросы?</h3>
+                        <p class="contacts__subtitle">Оставьте свой номер телефона. Свяжемся с Вами в течение 15 минут
+                        </p>
+                    </div>
+                    <form method="POST" action="#" class="contacts__form">
+                        <label for="contacts__name" class="contacts__text">Ваше имя</label>
+                        <input type="text" name="" id="contacts__name" class="contacts__input contacts__input-name"
+                            placeholder="Сергей Иванов">
+                        <label for="contacts__tel" class="contacts__text">Ваш телефон</label>
+                        <input type="tel" name="" id="contacts__tel" class="contacts__input contacts__input-tel">
+                        <button class="contacts__button button">Перезвоните мне</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__phone">8-800-600-51-49</div>
+                <div class="footer__social">
+                    <a class="footer__link" href="https://www.facebook.com/torfpro/" target="_blank">
+                        <svg version="1.1" width="30px" height="30px" viewBox="0 0 48 48">
+                            <desc>Facebook</desc>
+                            <path style="fill:#ffffff;"
+                                d="M47.761,24c0,13.121-10.638,23.76-23.758,23.76C10.877,47.76,0.239,37.121,0.239,24c0-13.124,10.638-23.76,23.764-23.76C37.123,0.24,47.761,10.876,47.761,24 M20.033,38.85H26.2V24.01h4.163l0.539-5.242H26.2v-3.083c0-1.156,0.769-1.427,1.308-1.427h3.318V9.168L26.258,9.15c-5.072,0-6.225,3.796-6.225,6.224v3.394H17.1v5.242h2.933V38.85z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="footer__link" href="https://vk.com/torfpro" target="_blank">
+                        <svg version="1.1" width="30px" height="30px" viewBox="0 0 48 48">
+                            <desc>VK</desc>
+                            <path style="fill:#ffffff;"
+                                d="M47.761,24c0,13.121-10.639,23.76-23.76,23.76C10.878,47.76,0.239,37.121,0.239,24c0-13.123,10.639-23.76,23.762-23.76C37.122,0.24,47.761,10.877,47.761,24 M35.259,28.999c-2.621-2.433-2.271-2.041,0.89-6.25c1.923-2.562,2.696-4.126,2.45-4.796c-0.227-0.639-1.64-0.469-1.64-0.469l-4.71,0.029c0,0-0.351-0.048-0.609,0.106c-0.249,0.151-0.414,0.505-0.414,0.505s-0.742,1.982-1.734,3.669c-2.094,3.559-2.935,3.747-3.277,3.524c-0.796-0.516-0.597-2.068-0.597-3.171c0-3.449,0.522-4.887-1.02-5.259c-0.511-0.124-0.887-0.205-2.195-0.219c-1.678-0.016-3.101,0.007-3.904,0.398c-0.536,0.263-0.949,0.847-0.697,0.88c0.31,0.041,1.016,0.192,1.388,0.699c0.484,0.656,0.464,2.131,0.464,2.131s0.282,4.056-0.646,4.561c-0.632,0.347-1.503-0.36-3.37-3.588c-0.958-1.652-1.68-3.481-1.68-3.481s-0.14-0.344-0.392-0.527c-0.299-0.222-0.722-0.298-0.722-0.298l-4.469,0.018c0,0-0.674-0.003-0.919,0.289c-0.219,0.259-0.018,0.752-0.018,0.752s3.499,8.104,7.573,12.23c3.638,3.784,7.764,3.36,7.764,3.36h1.867c0,0,0.566,0.113,0.854-0.189c0.265-0.288,0.256-0.646,0.256-0.646s-0.034-2.512,1.129-2.883c1.15-0.36,2.624,2.429,4.188,3.497c1.182,0.812,2.079,0.633,2.079,0.633l4.181-0.056c0,0,2.186-0.136,1.149-1.858C38.281,32.451,37.763,31.321,35.259,28.999">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="footer__link" href="https://www.youtube.com/channel/UC0aRuMm972vHWCRt7gm9EKQ"
+                        target="_blank">
+                        <svg version="1.1" width="30px" height="30px" viewBox="0 0 48 48">
+                            <desc>YouTube</desc>
+                            <path style="fill:#ffffff;"
+                                d="M24 0.0130005C37.248 0.0130005 47.987 10.753 47.987 24C47.987 37.247 37.247 47.987 24 47.987C10.753 47.987 0.0130005 37.247 0.0130005 24C0.0130005 10.753 10.752 0.0130005 24 0.0130005ZM35.815 18.093C35.565 16.756 34.452 15.758 33.173 15.635C30.119 15.439 27.054 15.28 23.995 15.278C20.936 15.276 17.882 15.432 14.828 15.625C13.544 15.749 12.431 16.742 12.182 18.084C11.898 20.017 11.756 21.969 11.756 23.92C11.756 25.871 11.898 27.823 12.182 29.756C12.431 31.098 13.544 32.21 14.828 32.333C17.883 32.526 20.935 32.723 23.995 32.723C27.053 32.723 30.121 32.551 33.173 32.353C34.452 32.229 35.565 31.084 35.815 29.747C36.101 27.817 36.244 25.868 36.244 23.919C36.244 21.971 36.101 20.023 35.815 18.093ZM21.224 27.435V20.32L27.851 23.878L21.224 27.435Z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
